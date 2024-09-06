@@ -1,9 +1,10 @@
-/*
+/* 
  * Use a table to represtent Test Suite
  * Columns: | Type | Input(s) | Expected Output | Actual Output | Pass? |
  *  
  */
 
+// Code used for Question 1
 public class driver {
     public static void main(String[] args) {
         System.out.println("coding is the best \ndon't let it make you feel dumb \nkeep calm, debug on." + "\n");
