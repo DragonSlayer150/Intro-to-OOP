@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SumOfIntegers {
     public static void main(String[] args) {
-        final int MAX_NUM_TRIES = 2;
+        final int MAX_NUM_TRIES = 1;
         int numberOfTries;
         int inputInteger;
         int sum;
