@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class UnitConversion {
     public static void main(String[] args) {
         // Using Scanner and loop to simplify testing
+        Scanner input = new Scanner(System.in);
         while (true) {
-            Scanner input = new Scanner(System.in);
 
             System.out.println("Enter Miles: ");
             double inputUnit = input.nextDouble();
@@ -12,9 +12,10 @@ public class UnitConversion {
             if (inputUnit == -1)
                 break;
 
-            double output = (inputUnit * 5280.0) / 3.0;
+            double output = inputUnit * 1.609;
 
             System.out.printf("%f in Yards is %f%n", inputUnit, output);
         }
+        input.close();
     }
 }
