@@ -14,7 +14,7 @@ public class UnitConversion {
 
             double output = inputUnit * 1.609;
 
-            System.out.printf("%f in Yards is %f%n", inputUnit, output);
+            System.out.printf("%f in Kilometers is %f%n", inputUnit, output);
         }
         input.close();
     }

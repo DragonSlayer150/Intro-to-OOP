@@ -19,8 +19,6 @@ public class PrimativeTypes {
         g = '\0';
         h = 12e78;
 
-        System.out.println("All done!");
-
+        System.out.println("All done!" + a + b + c + d + e + f + g + h);
     }
-
 }

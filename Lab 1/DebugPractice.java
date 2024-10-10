@@ -9,7 +9,7 @@ public class DebugPractice {
         y *= 2; // b)
         z = y % (x--); // c)
 
-        System.out.println("its working");
+        System.out.println("its working" + z);
     }
 
 }
