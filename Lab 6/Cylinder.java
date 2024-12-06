@@ -1,9 +1,9 @@
-public class Cylinder extends Shape {
+public class Cylinder extends Circle {
     private float height;
     private final float PI = (float) Math.PI; // p = pi
 
     public Cylinder(float radius, float height) {
-        super.radius = radius;
+        super(radius);
         this.height = height;
     }
 
@@ -17,12 +17,11 @@ public class Cylinder extends Shape {
 
     @Override
     public float getArea() {
-        return 2 * PI * this.radius * (this.radius + height); // A = 2pr(r+h)
+        return 2 * PI * super.getRadius() * (super.getRadius() + height); // A = 2pr(r+h)
     }
 
-    @Override
     public float getVolume() {
-        return ((float) Math.PI * this.radius * this.radius) * this.height; // V = phr^2
+        return super.getArea() * this.height; // V = phr^2
     }
 
     public void printCylinder() {
@@ -34,7 +33,7 @@ public class Cylinder extends Shape {
     }
 
     public static void main(String[] args) {
-        Cylinder c = new Cylinder(1, 1);
+        Cylinder c = new Cylinder(5, 5);
 
         System.out.println("Before Change: ");
         c.printCylinder();
